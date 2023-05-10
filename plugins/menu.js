@@ -181,7 +181,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await m.reply('Tunggu Sebentar...')
+    await m.reply(`${text}`)
 // Fake Contact
  const fcon = {
 	 key:
@@ -190,7 +190,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
 	 { remoteJid: "status@broadcast" } : {}) },
 	 message: { "contactMessage": { "title":"sri","h": `haloo`, 'jpegThumbnail': fs.readFileSync('./thumbnail.jpg')}}
 	}
-    let thumb = 'https://telegra.ph/file/d9256b2ca06a20de2c11f.jpg'
+    let thumb = 'https://telegra.ph/file/fc54183a7e328c8971598.jpg'
     let menu = [
     '🗿'
     ]
@@ -199,7 +199,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     text: `${menu}`,
     key: m.key,
     }})
-    conn.sendButton(m.chat, text.trim(),"BotzzMee", await (await fetch(thumb)).buffer(), [['Owner', '.owner'],['Donasi', '.donasi'],['Speed', '.speed']], true, { quoted: m })
+    /*conn.sendButton(m.chat, text.trim(),"『BOT』 Rzkyツ", await (await fetch(thumb)).buffer(), [['Owner', '.owner'],['Donasi', '.donasi'],['Speed', '.speed']], true, { quoted: m })*/
     conn.sendFile(m.chat, './mp3/dann.mp3', '', null, m, true, { type: "audioMessage", ptt: true, fileLength: 88738 })
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)

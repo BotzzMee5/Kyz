@@ -10,7 +10,7 @@ await m.reply('Tunggu Sebentar...')
     if (/webp/.test(mime)) {
         out = await webp2png(media)
     }
-    await conn.sendFile(m.chat, out, 'out.png', '*2023 © Kisuke Botz*', m, false)
+    await conn.sendFile(m.chat, out, 'out.png', '*『BOT』 Rzkyツ*', m, false)
 }
 handler.help = ['toimg <reply|media>']
 handler.tags = ['maker']
