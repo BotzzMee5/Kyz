@@ -156,7 +156,7 @@ setInterval(async () => {
     const q = { "key": { "remoteJid": "status@broadcast", "participant":"0@s.whatsapp.net", "fromMe": false, "id": "" },
 	"message": { "conversation": "Berhasil mencadangkan database.json" }}
     let sesi = await fs.readFileSync('./database.json')
-    return await conn.sendMessage('62831745089623@s.whatsapp.net', { document: sesi, mimetype: 'application/json', fileName: 'database.json' }, { quoted: q })
+    return await conn.sendMessage('6282389924037@s.whatsapp.net', { document: sesi, mimetype: 'application/json', fileName: 'database.json' }, { quoted: q })
   }, 60 * 60 * 1000)
 
 async function connectionUpdate(update) {
@@ -210,8 +210,8 @@ reloadHandler = function (restatConn) {
     conn.ev.off('creds.update', conn.credsUpdate)
   }
 
-  conn.welcome = 'Selamat datang @user 👋' 
-  conn.bye = 'Selamat tinggal @user 👋'
+  conn.welcome = '*Beban Group @user Telah Datang!*\nSelamat Datang, Silahkan Keluar☺️' 
+  conn.bye = 'Beban Group @user telah tiada!\nSelamat Jalan, Smoga Tenang Di Alam Sana☺️'
   conn.spromote = '@user sekarang admin!'
   conn.sdemote = '@user sekarang bukan admin!'
   conn.handler = handler.handler.bind(conn)
