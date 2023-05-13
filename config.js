@@ -27,10 +27,10 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
 global.owner = [
   ['6283174508962'],
   ['6283174508962'],
-  ['6285810287354', 'Zuka', 'bestb7675@gmail.com', true]
+  ['6285772754399', 'Zuka', 'bestb7675@gmail.com', true]
 ] // Put your number here
 global.mods = [] // Want some help?
-global.prems = ['6285810287354'] // Premium user has unlimited limit
+global.prems = ['6285772754399'] // Premium user has unlimited limit
 global.APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com',
@@ -128,7 +128,7 @@ global.author = '『BOT』 Rzkyツ'
 global.packname = '『BOT』 Rzkyツ'
 global.danied = '✘ 𝗘𝗥𝗥𝗢𝗥 𝟰𝟬𝟰'
 global.ultahowner = 'kepo'
-global.nomorown = '6285810287354'
+global.nomorown = '6285772754399'
 global.nameown = 'Muhammad Riskii'
 
 // Tampilan
