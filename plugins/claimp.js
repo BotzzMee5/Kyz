@@ -1,4 +1,4 @@
-let { MessageType } = require('@adiwajshing/baileys')
+/*let { MessageType } = require('@adiwajshing/baileys')
 let handler = async (m, { conn, text, usedPrefix }) => {
   function no(number){
     return number.replace(/\s/g,'').replace(/([@+-])/g,'')
@@ -39,4 +39,4 @@ function msToDate(ms) {
   sec = Math.floor((minutesms)/(1000));
   return days+" Days " + hours + " Hours " + minutes + " Minutes";
   // +minutes+":"+sec;
-}
+}*/

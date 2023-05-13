@@ -4,7 +4,7 @@ let handler = async (m, { conn, usedPrefix, participants }) => {
   const delay = time => new Promise(res=>setTimeout(res,time));
   let thumb = 'https://telegra.ph/file/22384cfe132439a632d9e.jpg'
 
-  if (new Date - global.db.data.users[m.sender].lastmulung< 1800000) throw `Clan kamu sudah kecapekan berperang\n\nTunggu ${msToTime(time - new Date())} lagi`
+  if (new Date - global.db.data.users[m.sender].lastmulung< 1800000) throw `Clan kamu sudah kecapekan berperang\n\nTunggu ${lamaPertarungan} lagi`
  
   let users = participants.map(u => u.id)
   var lawan
